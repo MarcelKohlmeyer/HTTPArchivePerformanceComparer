@@ -15,3 +15,6 @@ Deletes the HAR-file with the given name from the APIs memory
 
 ### GET ```/httpArchives/compare```
 Compares all stored HAR files and returns each request-duration for every URL as well as an average duration per url-request per HAR-file.
+
+## Table View
+After adding at least two HAR-files, the table view can be accessed via ```/```.

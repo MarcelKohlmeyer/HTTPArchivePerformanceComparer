@@ -10,6 +10,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IHttpArchiveService, HttpArchiveService>();
 
+builder.Services.AddRazorPages();
+builder.Services.AddMvc();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,5 +27,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
+app.MapRazorPages();
 
 app.Run();
